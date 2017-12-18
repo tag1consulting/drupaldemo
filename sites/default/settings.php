@@ -244,7 +244,15 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases['default']['default'] = array(
+      'driver' => 'mysql',
+      'database' => 'ebdb',
+      'username' => 'root',
+      'password' => 'drupaltest',
+      'host' => 'aa18ue0cuqi5eeo.c6jtsbiceret.us-west-1.rds.amazonaws.com',
+      'prefix' => '',
+    );
+
 
 /**
  * Access control for update.php script.
